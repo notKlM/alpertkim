@@ -1,0 +1,26 @@
+/* Default to dark mode */
+:root {
+    --bg-color: #121212;
+    --text-color: #fff;
+    --button-bg-color: rgba(255, 255, 255, 0.2);
+    --button-hover-bg-color: #646464;
+  }
+  
+  /* Light mode overrides */
+  .light-theme {
+    --bg-color: #fcf6e7;
+    --text-color: #000;
+    --button-bg-color: rgba(0, 0, 0, 0.2);
+    --button-hover-bg-color: #aaa;
+  }
+  
+  /* Dark mode overrides (default) */
+  .dark-theme {
+    --bg-color: #111;
+    --text-color: #fff;
+    --button-bg-color: rgba(255, 255, 255, 0.2);
+    --button-hover-bg-color: #646464;
+  }
+  
+  
+  

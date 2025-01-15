@@ -1,0 +1,71 @@
+body, html, #root, .App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; /* Ensure full height */
+  overflow: hidden; /* Prevent scrolling */
+  background-color: #276D45;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.spline-viewer {
+  position: absolute;
+  left: 50%; /* Center horizontally */
+  top: 50%;  /* Center vertically */
+  transform: translate(-50%, -50%) scale(1.2); /* Center and zoom */
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+/* Loading screen styling */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0); /* Dark transparent background */
+  z-index: 9999; /* Ensure it's above everything */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loading bar styling */
+.loading-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* Progress indicator inside the bar */
+.progress {
+  height: 100%;
+  background-color: #4caf50; /* Green progress */
+  transition: width 0.1s ease-in-out;
+}
+
+/* Text inside the loading bar */
+.loading-text {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+}
+

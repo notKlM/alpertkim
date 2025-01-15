@@ -1,0 +1,44 @@
+/* Import the custom font */
+
+  .content {
+    position: fixed; /* Ensures it's positioned correctly in the viewport */
+    top: 40%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust the position to truly center it */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1; /* Lower z-index to ensure Spline is in front */
+    margin: 0;
+    padding: 0;
+    pointer-events: auto;
+  }
+
+  .hero-path {
+    fill: var(--text-color);
+    transition: fill 0.3s ease; /* Smooth color transition */
+  }
+
+  .hero-fill {
+    fill: var(--bg-color);
+    transition: fill 0.3s ease; /* Smooth color transition */
+  }
+
+  .hero-text-up {
+    width: 160vh; /* Adjust size */
+    object-fit: contain; /* Keep proportions */
+    z-index: 2;
+    padding-bottom: 5vh;
+  }
+  .hero-text-bot {
+    width: 160vh; /* Adjust size */
+    object-fit: contain; /* Keep proportions */
+    z-index: 2;
+  }
+
+
+  
+  
+  
